@@ -1,0 +1,412 @@
+{
+ "ColorPickerUI": {
+  "exact": [
+   "WinUI XAML: compiled twice around the XAML compiler, which takes the compile's references as files"
+  ],
+  "extra_loads": {
+   "//bazel/dotnet:apphost.bzl": [
+    "dotnet_apphost"
+   ],
+   "//bazel/dotnet:csc_assembly.bzl": [
+    "csc_assembly",
+    "exact_csharp_assembly"
+   ],
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ],
+   "//bazel/dotnet:pri.bzl": [
+    "winui_pri"
+   ],
+   "//bazel/dotnet:xaml_winui.bzl": [
+    "winui_xaml_compile"
+   ],
+   "//bazel:layout.bzl": [
+    "program_directory"
+   ]
+  },
+  "loads": [
+   "defines",
+   "write_file"
+  ],
+  "notes": [
+   "12 debug-symbol and documentation files of the reference's program directory are not laid out"
+  ],
+  "package": "src/modules/colorPicker/ColorPickerUI",
+  "pri": ":ColorPickerUI_pri",
+  "program": ":PowerToys.ColorPickerUI",
+  "rule": "exact_csharp_assembly",
+  "target": "ColorPickerUI",
+  "xaml": "winui"
+ },
+ "Common.UI": {
+  "extra_loads": {
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ]
+  },
+  "loads": [
+   "csharp_library",
+   "defines",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/common/Common.UI",
+  "rule": "csharp_library",
+  "target": "Common.UI"
+ },
+ "Common.UI.Controls": {
+  "exact": [
+   "WinUI XAML: compiled twice around the XAML compiler, which takes the compile's references as files"
+  ],
+  "extra_loads": {
+   "//bazel/dotnet:csc_assembly.bzl": [
+    "csc_assembly",
+    "exact_csharp_assembly"
+   ],
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ],
+   "//bazel/dotnet:pri.bzl": [
+    "winui_pri"
+   ],
+   "//bazel/dotnet:xaml_winui.bzl": [
+    "winui_xaml_compile"
+   ]
+  },
+  "loads": [
+   "defines",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/common/Common.UI.Controls",
+  "pri": ":Common.UI.Controls_pri",
+  "rule": "exact_csharp_assembly",
+  "target": "Common.UI.Controls",
+  "xaml": "winui"
+ },
+ "FancyZonesEditor": {
+  "exact": [
+   "WPF XAML: the markup compiler takes the compile's references as files, and the compiled markup is embedded under a name of its own",
+   "embedded resource PowerToys.FancyZonesEditor.g.resources (and 1 more): rules_dotnet names every resource `<assembly>.<path>`"
+  ],
+  "extra_loads": {
+   "//bazel/dotnet:apphost.bzl": [
+    "dotnet_apphost"
+   ],
+   "//bazel/dotnet:csc_assembly.bzl": [
+    "csc_assembly",
+    "exact_csharp_assembly"
+   ],
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ],
+   "//bazel/dotnet:xaml_wpf.bzl": [
+    "wpf_markup_compile",
+    "wpf_resources"
+   ],
+   "//bazel:layout.bzl": [
+    "program_directory"
+   ]
+  },
+  "loads": [
+   "defines",
+   "resx_resources",
+   "write_file"
+  ],
+  "not_laid_out": [
+   "PowerToys.FancyZonesEditor.dll.config"
+  ],
+  "notes": [
+   "8 debug-symbol and documentation files of the reference's program directory are not laid out"
+  ],
+  "package": "src/modules/fancyzones/editor/FancyZonesEditor",
+  "program": ":PowerToys.FancyZonesEditor",
+  "rule": "exact_csharp_assembly",
+  "target": "FancyZonesEditor",
+  "xaml": "wpf"
+ },
+ "FancyZonesEditorCommon": {
+  "extra_loads": {
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ]
+  },
+  "loads": [
+   "csharp_library",
+   "defines",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/modules/fancyzones/FancyZonesEditorCommon",
+  "rule": "csharp_library",
+  "target": "FancyZonesEditorCommon"
+ },
+ "FancyZonesEditor_l4maa1e4_wpftmp": {
+  "excluded": "the temporary project MSBuild generates for the WPF markup compiler; its compile is the `_intermediate` target of the project it belongs to",
+  "notes": [],
+  "package": "src/modules/fancyzones/editor/FancyZonesEditor",
+  "target": "FancyZonesEditor_l4maa1e4_wpftmp"
+ },
+ "GPOWrapperProjection": {
+  "extra_loads": {
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ]
+  },
+  "loads": [
+   "csharp_library",
+   "defines",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/common/GPOWrapperProjection",
+  "rule": "csharp_library",
+  "target": "GPOWrapperProjection"
+ },
+ "Hosts": {
+  "exact": [
+   "WinUI XAML: compiled twice around the XAML compiler, which takes the compile's references as files"
+  ],
+  "extra_loads": {
+   "//bazel/dotnet:apphost.bzl": [
+    "dotnet_apphost"
+   ],
+   "//bazel/dotnet:csc_assembly.bzl": [
+    "csc_assembly",
+    "exact_csharp_assembly"
+   ],
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ],
+   "//bazel/dotnet:pri.bzl": [
+    "winui_pri"
+   ],
+   "//bazel/dotnet:xaml_winui.bzl": [
+    "winui_xaml_compile"
+   ],
+   "//bazel:layout.bzl": [
+    "program_directory"
+   ]
+  },
+  "loads": [
+   "defines",
+   "write_file"
+  ],
+  "notes": [
+   "13 debug-symbol and documentation files of the reference's program directory are not laid out"
+  ],
+  "package": "src/modules/Hosts/Hosts",
+  "pri": ":Hosts_pri",
+  "program": ":PowerToys.Hosts",
+  "rule": "exact_csharp_assembly",
+  "target": "Hosts",
+  "xaml": "winui"
+ },
+ "HostsUILib": {
+  "exact": [
+   "WinUI XAML: compiled twice around the XAML compiler, which takes the compile's references as files"
+  ],
+  "extra_loads": {
+   "//bazel/dotnet:csc_assembly.bzl": [
+    "csc_assembly",
+    "exact_csharp_assembly"
+   ],
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ],
+   "//bazel/dotnet:pri.bzl": [
+    "winui_pri"
+   ],
+   "//bazel/dotnet:xaml_winui.bzl": [
+    "winui_xaml_compile"
+   ]
+  },
+  "loads": [
+   "defines",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/modules/Hosts/HostsUILib",
+  "pri": ":HostsUILib_pri",
+  "rule": "exact_csharp_assembly",
+  "target": "HostsUILib",
+  "xaml": "winui"
+ },
+ "ManagedCommon": {
+  "exact": [
+   "embedded resource ManagedCommon.CommonResources.resources: rules_dotnet names every resource `<assembly>.<path>`"
+  ],
+  "extra_loads": {
+   "//bazel/dotnet:csc_assembly.bzl": [
+    "exact_csharp_assembly"
+   ],
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ]
+  },
+  "loads": [
+   "defines",
+   "resx_resources",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/common/ManagedCommon",
+  "rule": "exact_csharp_assembly",
+  "target": "ManagedCommon"
+ },
+ "ManagedTelemetry": {
+  "extra_loads": {
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ]
+  },
+  "loads": [
+   "csharp_library",
+   "defines",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/common/ManagedTelemetry/Telemetry",
+  "rule": "csharp_library",
+  "target": "ManagedTelemetry"
+ },
+ "MouseJump.Common": {
+  "extra_loads": {
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ],
+   "//bazel/dotnet:msbuild_config.bzl": [
+    "msbuild_editorconfig"
+   ]
+  },
+  "loads": [
+   "csharp_library",
+   "defines",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/modules/MouseUtils/MouseJump.Common",
+  "rule": "csharp_library",
+  "target": "MouseJump.Common"
+ },
+ "MouseJump.Models": {
+  "extra_loads": {
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ]
+  },
+  "loads": [
+   "csharp_library",
+   "defines",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/modules/MouseUtils/MouseJump.Models",
+  "rule": "csharp_library",
+  "target": "MouseJump.Models"
+ },
+ "PowerDisplay.Models": {
+  "extra_loads": {
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ]
+  },
+  "loads": [
+   "csharp_library",
+   "defines",
+   "resx_resources",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/modules/powerdisplay/PowerDisplay.Models",
+  "rule": "csharp_library",
+  "target": "PowerDisplay.Models"
+ },
+ "Settings.UI.Library": {
+  "exact": [
+   "embedded resource Settings.UI.Library.Resources.Resources.resources: rules_dotnet names every resource `<assembly>.<path>`"
+  ],
+  "extra_loads": {
+   "//bazel/dotnet:csc_assembly.bzl": [
+    "exact_csharp_assembly"
+   ],
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ]
+  },
+  "loads": [
+   "defines",
+   "resx_resources",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/settings-ui/Settings.UI.Library",
+  "rule": "exact_csharp_assembly",
+  "target": "Settings.UI.Library"
+ },
+ "WorkspacesCsharpLibrary": {
+  "extra_loads": {
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ]
+  },
+  "loads": [
+   "csharp_library",
+   "defines",
+   "write_file"
+  ],
+  "notes": [],
+  "package": "src/modules/Workspaces/WorkspacesCsharpLibrary",
+  "rule": "csharp_library",
+  "target": "WorkspacesCsharpLibrary"
+ },
+ "WorkspacesLauncherUI": {
+  "exact": [
+   "WPF XAML: the markup compiler takes the compile's references as files, and the compiled markup is embedded under a name of its own",
+   "embedded resource PowerToys.WorkspacesLauncherUI.g.resources (and 1 more): rules_dotnet names every resource `<assembly>.<path>`"
+  ],
+  "extra_loads": {
+   "//bazel/dotnet:apphost.bzl": [
+    "dotnet_apphost"
+   ],
+   "//bazel/dotnet:csc_assembly.bzl": [
+    "csc_assembly",
+    "exact_csharp_assembly"
+   ],
+   "//bazel/dotnet:cswinrt.bzl": [
+    "cswinrt_projection"
+   ],
+   "//bazel/dotnet:xaml_wpf.bzl": [
+    "wpf_markup_compile",
+    "wpf_resources"
+   ],
+   "//bazel:layout.bzl": [
+    "program_directory"
+   ]
+  },
+  "loads": [
+   "defines",
+   "resx_resources",
+   "write_file"
+  ],
+  "not_laid_out": [
+   "PowerToys.WorkspacesLauncherUI.dll.config"
+  ],
+  "notes": [
+   "references Interop.IWshRuntimeLibrary.dll, copied from the reference tree: MSBuild generates it from a COM type library of the machine",
+   "references Interop.Shell32.dll, copied from the reference tree: MSBuild generates it from a COM type library of the machine",
+   "13 debug-symbol and documentation files of the reference's program directory are not laid out"
+  ],
+  "package": "src/modules/Workspaces/WorkspacesLauncherUI",
+  "program": ":PowerToys.WorkspacesLauncherUI",
+  "rule": "exact_csharp_assembly",
+  "target": "WorkspacesLauncherUI",
+  "xaml": "wpf"
+ },
+ "WorkspacesLauncherUI_qq533e0t_wpftmp": {
+  "excluded": "the temporary project MSBuild generates for the WPF markup compiler; its compile is the `_intermediate` target of the project it belongs to",
+  "notes": [],
+  "package": "src/modules/Workspaces/WorkspacesLauncherUI",
+  "target": "WorkspacesLauncherUI_qq533e0t_wpftmp"
+ }
+}

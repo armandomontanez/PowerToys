@@ -1,0 +1,575 @@
+{
+ "ignore": {
+  "include_map": [
+   {
+    "from": "src/modules/alwaysontop/alwaysontop/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/modules/alwaysontop/AlwaysOnTop/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/alwaysontop/AlwaysOnTop/PowerToys.AlwaysOnTop_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/alwaysontop/AlwaysOnTop/PowerToys.AlwaysOnTop_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/modules/alwaysontop/alwaysontopmoduleinterface/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/modules/alwaysontop/AlwaysOnTopModuleInterface/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/alwaysontop/AlwaysOnTopModuleInterface/PowerToys.AlwaysOnTopModuleInterface_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/alwaysontop/AlwaysOnTopModuleInterface/PowerToys.AlwaysOnTopModuleInterface_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/updating/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/updating/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/updating/ApplicationUpdate_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/updating/ApplicationUpdate_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/COMUtils/COMUtils_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/COMUtils/COMUtils_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/modules/colorpicker/colorpicker/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPicker/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/colorPicker/ColorPicker/PowerToys.ColorPicker_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/colorPicker/ColorPicker/PowerToys.ColorPicker_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/display/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/Display/Display_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/Display/Display_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/telemetry/etwtrace/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/Telemetry/EtwTrace/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/Telemetry/EtwTrace/EtwTrace_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/Telemetry/EtwTrace/EtwTrace_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/gpowrapper/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/GPOWrapper/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/GPOWrapper/PowerToys.GPOWrapper_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/GPOWrapper/PowerToys.GPOWrapper_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/modules/hosts/hostsmoduleinterface/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/modules/Hosts/HostsModuleInterface/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/Hosts/HostsModuleInterface/PowerToys.HostsModuleInterface_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/Hosts/HostsModuleInterface/PowerToys.HostsModuleInterface_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/notifications/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/notifications/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/notifications/Notifications_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/notifications/Notifications_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/interop/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/interop/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/interop/PowerToys.Interop_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/interop/PowerToys.Interop_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/settingsapi/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/SettingsAPI/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/SettingsAPI/SettingsAPI_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/SettingsAPI/SettingsAPI_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/themes/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/Themes/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/Themes/Themes_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/Themes/Themes_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/version/Version_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/version/Version_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/modules/zoomit/zoomitsettingsinterop/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/modules/ZoomIt/ZoomItSettingsInterop/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/ZoomIt/ZoomItSettingsInterop/PowerToys.ZoomItSettingsInterop_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/ZoomIt/ZoomItSettingsInterop/PowerToys.ZoomItSettingsInterop_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/logger/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/common/logger/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/logger/logger_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/logger/logger_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/runner/x64/release/generated files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "src/runner/x64/Release/Generated Files",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/runner/PowerToys_component",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/runner/PowerToys_winrt_refs",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/bazel/cppwinrt/platform",
+    "to": "@cppwinrt"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/communitytoolkit.mvvm/8.4.0",
+    "to": "@nuget/communitytoolkit.mvvm"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/communitytoolkit.mvvm/8.4.0",
+    "to": "@nuget/communitytoolkit.mvvm"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.build.copyonwrite/1.0.282",
+    "to": "@nuget/microsoft.build.copyonwrite"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.build.copyonwrite/1.0.282",
+    "to": "@nuget/microsoft.build.copyonwrite"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.build.runvstest/1.0.319",
+    "to": "@nuget/microsoft.build.runvstest"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.build.runvstest/1.0.319",
+    "to": "@nuget/microsoft.build.runvstest"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.diagnostics.tracing.traceevent/3.1.16",
+    "to": "@nuget/microsoft.diagnostics.tracing.traceevent"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.diagnostics.tracing.traceevent/3.1.16",
+    "to": "@nuget/microsoft.diagnostics.tracing.traceevent"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.extensions.configuration.binder/10.0.11",
+    "to": "@nuget/microsoft.extensions.configuration.binder"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.extensions.configuration.binder/10.0.11",
+    "to": "@nuget/microsoft.extensions.configuration.binder"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.extensions.configuration.usersecrets/10.0.11",
+    "to": "@nuget/microsoft.extensions.configuration.usersecrets"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.extensions.configuration.usersecrets/10.0.11",
+    "to": "@nuget/microsoft.extensions.configuration.usersecrets"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.extensions.logging.abstractions/10.0.11",
+    "to": "@nuget/microsoft.extensions.logging.abstractions"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.extensions.logging.abstractions/10.0.11",
+    "to": "@nuget/microsoft.extensions.logging.abstractions"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.extensions.options/10.0.11",
+    "to": "@nuget/microsoft.extensions.options"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.extensions.options/10.0.11",
+    "to": "@nuget/microsoft.extensions.options"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.graphics.win2d/1.3.2",
+    "to": "@nuget/microsoft.graphics.win2d"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.graphics.win2d/1.3.2",
+    "to": "@nuget/microsoft.graphics.win2d"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.net.illink.tasks/10.0.12",
+    "to": "@nuget/microsoft.net.illink.tasks"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.net.illink.tasks/10.0.12",
+    "to": "@nuget/microsoft.net.illink.tasks"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.web.webview2/1.0.4022.49",
+    "to": "@nuget/microsoft.web.webview2"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.web.webview2/1.0.4022.49",
+    "to": "@nuget/microsoft.web.webview2"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.ai.machinelearning/2.1.70",
+    "to": "@nuget/microsoft.windows.ai.machinelearning"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.ai.machinelearning/2.1.70",
+    "to": "@nuget/microsoft.windows.ai.machinelearning"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.cppwinrt/2.0.250303.1",
+    "to": "@nuget/microsoft.windows.cppwinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.cppwinrt/2.0.250303.1",
+    "to": "@nuget/microsoft.windows.cppwinrt"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.cswin32/0.3.269",
+    "to": "@nuget/microsoft.windows.cswin32"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.cswin32/0.3.269",
+    "to": "@nuget/microsoft.windows.cswin32"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.cswinrt/2.2.0",
+    "to": "@nuget/microsoft.windows.cswinrt"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.cswinrt/2.2.0",
+    "to": "@nuget/microsoft.windows.cswinrt"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.implementationlibrary/1.0.250325.1",
+    "to": "@nuget/microsoft.windows.implementationlibrary"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.implementationlibrary/1.0.250325.1",
+    "to": "@nuget/microsoft.windows.implementationlibrary"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.implementationlibrary/1.0.260126.7",
+    "to": "@nuget/microsoft.windows.implementationlibrary"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.implementationlibrary/1.0.260126.7",
+    "to": "@nuget/microsoft.windows.implementationlibrary"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.sdk.buildtools/10.0.26100.6901",
+    "to": "@nuget/microsoft.windows.sdk.buildtools"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.sdk.buildtools/10.0.26100.6901",
+    "to": "@nuget/microsoft.windows.sdk.buildtools"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.sdk.buildtools.msix/1.7.251221100",
+    "to": "@nuget/microsoft.windows.sdk.buildtools.msix"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.sdk.buildtools.msix/1.7.251221100",
+    "to": "@nuget/microsoft.windows.sdk.buildtools.msix"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.sdk.win32docs/0.1.42-alpha",
+    "to": "@nuget/microsoft.windows.sdk.win32docs"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.sdk.win32docs/0.1.42-alpha",
+    "to": "@nuget/microsoft.windows.sdk.win32docs"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.sdk.win32metadata/69.0.7-preview",
+    "to": "@nuget/microsoft.windows.sdk.win32metadata"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.sdk.win32metadata/69.0.7-preview",
+    "to": "@nuget/microsoft.windows.sdk.win32metadata"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windows.wdk.win32metadata/0.13.25-experimental",
+    "to": "@nuget/microsoft.windows.wdk.win32metadata"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windows.wdk.win32metadata/0.13.25-experimental",
+    "to": "@nuget/microsoft.windows.wdk.win32metadata"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk/2.2.0",
+    "to": "@nuget/microsoft.windowsappsdk"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk/2.2.0",
+    "to": "@nuget/microsoft.windowsappsdk"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.ai/2.2.3",
+    "to": "@nuget/microsoft.windowsappsdk.ai"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk.ai/2.2.3",
+    "to": "@nuget/microsoft.windowsappsdk.ai"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.base/2.0.4",
+    "to": "@nuget/microsoft.windowsappsdk.base"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk.base/2.0.4",
+    "to": "@nuget/microsoft.windowsappsdk.base"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.dwrite/2.1.0",
+    "to": "@nuget/microsoft.windowsappsdk.dwrite"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk.dwrite/2.1.0",
+    "to": "@nuget/microsoft.windowsappsdk.dwrite"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.foundation/2.1.0",
+    "to": "@nuget/microsoft.windowsappsdk.foundation"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk.foundation/2.1.0",
+    "to": "@nuget/microsoft.windowsappsdk.foundation"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.interactiveexperiences/2.0.15",
+    "to": "@nuget/microsoft.windowsappsdk.interactiveexperiences"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk.interactiveexperiences/2.0.15",
+    "to": "@nuget/microsoft.windowsappsdk.interactiveexperiences"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.ml/2.1.70",
+    "to": "@nuget/microsoft.windowsappsdk.ml"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk.ml/2.1.70",
+    "to": "@nuget/microsoft.windowsappsdk.ml"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.runtime/2.2.0",
+    "to": "@nuget/microsoft.windowsappsdk.runtime"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk.runtime/2.2.0",
+    "to": "@nuget/microsoft.windowsappsdk.runtime"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.widgets/2.0.5",
+    "to": "@nuget/microsoft.windowsappsdk.widgets"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk.widgets/2.0.5",
+    "to": "@nuget/microsoft.windowsappsdk.widgets"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.winui/2.2.1",
+    "to": "@nuget/microsoft.windowsappsdk.winui"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+nuget_assets+nuget/microsoft.windowsappsdk.winui/2.2.1",
+    "to": "@nuget/microsoft.windowsappsdk.winui"
+   },
+   {
+    "from": "external/+vcpkg_install+vcpkg/installed",
+    "to": "@vcpkg"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/external/+vcpkg_install+vcpkg/installed",
+    "to": "@vcpkg"
+   }
+  ],
+  "link_flags_prefixes": [
+   "/ASSEMBLYRESOURCE:"
+  ],
+  "source_dir_map": [
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.foundation/2.1.0",
+    "to": "@nuget/microsoft.windowsappsdk.foundation"
+   },
+   {
+    "from": "external/+nuget_assets+nuget/microsoft.windowsappsdk.ml/2.1.70",
+    "to": "@nuget/microsoft.windowsappsdk.ml"
+   }
+  ],
+  "source_map": [
+   {
+    "from": "src/common/GPOWrapper/x64/Release/Generated Files/module.g.cpp",
+    "to": "@cppwinrt/GPOWrapper/module.g.cpp"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/GPOWrapper/PowerToys.GPOWrapper_component.sources/module.g.cpp",
+    "to": "@cppwinrt/GPOWrapper/module.g.cpp"
+   },
+   {
+    "from": "src/common/interop/x64/Release/Generated Files/module.g.cpp",
+    "to": "@cppwinrt/PowerToys.Interop/module.g.cpp"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/common/interop/PowerToys.Interop_component.sources/module.g.cpp",
+    "to": "@cppwinrt/PowerToys.Interop/module.g.cpp"
+   },
+   {
+    "from": "src/modules/ZoomIt/ZoomItSettingsInterop/x64/Release/Generated Files/module.g.cpp",
+    "to": "@cppwinrt/ZoomItSettingsInterop/module.g.cpp"
+   },
+   {
+    "from": "bazel-out/x64_windows-opt/bin/src/modules/ZoomIt/ZoomItSettingsInterop/PowerToys.ZoomItSettingsInterop_component.sources/module.g.cpp",
+    "to": "@cppwinrt/ZoomItSettingsInterop/module.g.cpp"
+   }
+  ]
+ },
+ "target_map": {
+  "AlwaysOnTop": "src/modules/alwaysontop/AlwaysOnTop:PowerToys.AlwaysOnTop",
+  "AlwaysOnTopModuleInterface": "src/modules/alwaysontop/AlwaysOnTopModuleInterface:PowerToys.AlwaysOnTopModuleInterface.dll",
+  "ColorPicker": "src/modules/colorPicker/ColorPicker:PowerToys.ColorPicker.dll",
+  "GPOWrapper": "src/common/GPOWrapper:PowerToys.GPOWrapper.dll",
+  "HostsModuleInterface": "src/modules/Hosts/HostsModuleInterface:PowerToys.HostsModuleInterface.dll",
+  "PowerToys.Interop": "src/common/interop:PowerToys.Interop.dll",
+  "ZoomItSettingsInterop": "src/modules/ZoomIt/ZoomItSettingsInterop:PowerToys.ZoomItSettingsInterop.dll",
+  "runner": "src/runner:PowerToys"
+ }
+}

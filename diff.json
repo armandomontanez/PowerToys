@@ -1,0 +1,293 @@
+{
+  "total": 20,
+  "errors": 0,
+  "warnings": 20,
+  "converged": true,
+  "discrepancies": [
+    {
+      "kind": "defines_diff",
+      "severity": "warn",
+      "target": "PowerDisplay.Models",
+      "detail": "defines only on the bazel side",
+      "tu": null,
+      "cmake_only": [],
+      "bazel_only": [
+        "NETSTANDARD1_0_OR_GREATER",
+        "NETSTANDARD1_1_OR_GREATER",
+        "NETSTANDARD1_2_OR_GREATER",
+        "NETSTANDARD1_3_OR_GREATER",
+        "NETSTANDARD1_4_OR_GREATER",
+        "NETSTANDARD1_5_OR_GREATER",
+        "NETSTANDARD1_6_OR_GREATER",
+        "NETSTANDARD2_0_OR_GREATER",
+        "NETSTANDARD2_1_OR_GREATER",
+        "NETSTANDARD_OR_GREATER"
+      ]
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.ColorPickerUI",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "bazel-out/x64_windows-opt/bin/src/modules/colorPicker/ColorPickerUI/_msbuild/ColorPickerUI/ColorPickerUI.AssemblyInfo.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.ColorPickerUI",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "bazel-out/x64_windows-opt/bin/src/modules/colorPicker/ColorPickerUI/_msbuild/ColorPickerUI/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.ColorPickerUI",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "external/+nuget_assets+nuget/microsoft.windowsappsdk.foundation/2.1.0/include/UndockedRegFreeWinRT-AutoInitializer.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.ColorPickerUI",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "external/+nuget_assets+nuget/microsoft.windowsappsdk.foundation/2.1.0/include/WindowsAppRuntimeAutoInitializer.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "defines_diff",
+      "severity": "warn",
+      "target": "PowerToys.Common.UI [net10.0]",
+      "detail": "defines only on the bazel side",
+      "tu": null,
+      "cmake_only": [],
+      "bazel_only": [
+        "NETSTANDARD1_0_OR_GREATER",
+        "NETSTANDARD1_1_OR_GREATER",
+        "NETSTANDARD1_2_OR_GREATER",
+        "NETSTANDARD1_3_OR_GREATER",
+        "NETSTANDARD1_4_OR_GREATER",
+        "NETSTANDARD1_5_OR_GREATER",
+        "NETSTANDARD1_6_OR_GREATER",
+        "NETSTANDARD2_0_OR_GREATER",
+        "NETSTANDARD2_1_OR_GREATER",
+        "NETSTANDARD_OR_GREATER"
+      ]
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.Common.UI.Controls [net10.0]",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "bazel-out/x64_windows-opt/bin/src/common/Common.UI.Controls/_msbuild/Common.UI.Controls/Common.UI.Controls.AssemblyInfo.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.Common.UI.Controls [net10.0]",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "bazel-out/x64_windows-opt/bin/src/common/Common.UI.Controls/_msbuild/Common.UI.Controls/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "defines_diff",
+      "severity": "warn",
+      "target": "PowerToys.FancyZonesEditorCommon [net10.0]",
+      "detail": "defines only on the bazel side",
+      "tu": null,
+      "cmake_only": [],
+      "bazel_only": [
+        "NETSTANDARD1_0_OR_GREATER",
+        "NETSTANDARD1_1_OR_GREATER",
+        "NETSTANDARD1_2_OR_GREATER",
+        "NETSTANDARD1_3_OR_GREATER",
+        "NETSTANDARD1_4_OR_GREATER",
+        "NETSTANDARD1_5_OR_GREATER",
+        "NETSTANDARD1_6_OR_GREATER",
+        "NETSTANDARD2_0_OR_GREATER",
+        "NETSTANDARD2_1_OR_GREATER",
+        "NETSTANDARD_OR_GREATER"
+      ]
+    },
+    {
+      "kind": "defines_diff",
+      "severity": "warn",
+      "target": "PowerToys.GPOWrapperProjection [net10.0]",
+      "detail": "defines only on the bazel side",
+      "tu": null,
+      "cmake_only": [],
+      "bazel_only": [
+        "NETSTANDARD1_0_OR_GREATER",
+        "NETSTANDARD1_1_OR_GREATER",
+        "NETSTANDARD1_2_OR_GREATER",
+        "NETSTANDARD1_3_OR_GREATER",
+        "NETSTANDARD1_4_OR_GREATER",
+        "NETSTANDARD1_5_OR_GREATER",
+        "NETSTANDARD1_6_OR_GREATER",
+        "NETSTANDARD2_0_OR_GREATER",
+        "NETSTANDARD2_1_OR_GREATER",
+        "NETSTANDARD_OR_GREATER"
+      ]
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.Hosts",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "bazel-out/x64_windows-opt/bin/src/modules/Hosts/Hosts/_msbuild/Hosts/Hosts.AssemblyInfo.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.Hosts",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "bazel-out/x64_windows-opt/bin/src/modules/Hosts/Hosts/_msbuild/Hosts/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.Hosts",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "external/+nuget_assets+nuget/microsoft.windowsappsdk.foundation/2.1.0/include/UndockedRegFreeWinRT-AutoInitializer.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.Hosts",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "external/+nuget_assets+nuget/microsoft.windowsappsdk.foundation/2.1.0/include/WindowsAppRuntimeAutoInitializer.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.HostsUILib",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "bazel-out/x64_windows-opt/bin/src/modules/Hosts/HostsUILib/_msbuild/HostsUILib/HostsUILib.AssemblyInfo.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "extra_cs_src",
+      "severity": "warn",
+      "target": "PowerToys.HostsUILib",
+      "detail": "C# source compiled into this assembly in bazel but not in the reference",
+      "tu": "bazel-out/x64_windows-opt/bin/src/modules/Hosts/HostsUILib/_msbuild/HostsUILib/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+      "cmake_only": null,
+      "bazel_only": null
+    },
+    {
+      "kind": "defines_diff",
+      "severity": "warn",
+      "target": "PowerToys.ManagedTelemetry [net10.0]",
+      "detail": "defines only on the bazel side",
+      "tu": null,
+      "cmake_only": [],
+      "bazel_only": [
+        "NETSTANDARD1_0_OR_GREATER",
+        "NETSTANDARD1_1_OR_GREATER",
+        "NETSTANDARD1_2_OR_GREATER",
+        "NETSTANDARD1_3_OR_GREATER",
+        "NETSTANDARD1_4_OR_GREATER",
+        "NETSTANDARD1_5_OR_GREATER",
+        "NETSTANDARD1_6_OR_GREATER",
+        "NETSTANDARD2_0_OR_GREATER",
+        "NETSTANDARD2_1_OR_GREATER",
+        "NETSTANDARD_OR_GREATER"
+      ]
+    },
+    {
+      "kind": "defines_diff",
+      "severity": "warn",
+      "target": "PowerToys.MouseJump.Common",
+      "detail": "defines only on the bazel side",
+      "tu": null,
+      "cmake_only": [],
+      "bazel_only": [
+        "NETSTANDARD1_0_OR_GREATER",
+        "NETSTANDARD1_1_OR_GREATER",
+        "NETSTANDARD1_2_OR_GREATER",
+        "NETSTANDARD1_3_OR_GREATER",
+        "NETSTANDARD1_4_OR_GREATER",
+        "NETSTANDARD1_5_OR_GREATER",
+        "NETSTANDARD1_6_OR_GREATER",
+        "NETSTANDARD2_0_OR_GREATER",
+        "NETSTANDARD2_1_OR_GREATER",
+        "NETSTANDARD_OR_GREATER"
+      ]
+    },
+    {
+      "kind": "defines_diff",
+      "severity": "warn",
+      "target": "PowerToys.MouseJump.Models",
+      "detail": "defines only on the bazel side",
+      "tu": null,
+      "cmake_only": [],
+      "bazel_only": [
+        "NETSTANDARD1_0_OR_GREATER",
+        "NETSTANDARD1_1_OR_GREATER",
+        "NETSTANDARD1_2_OR_GREATER",
+        "NETSTANDARD1_3_OR_GREATER",
+        "NETSTANDARD1_4_OR_GREATER",
+        "NETSTANDARD1_5_OR_GREATER",
+        "NETSTANDARD1_6_OR_GREATER",
+        "NETSTANDARD2_0_OR_GREATER",
+        "NETSTANDARD2_1_OR_GREATER",
+        "NETSTANDARD_OR_GREATER"
+      ]
+    },
+    {
+      "kind": "defines_diff",
+      "severity": "warn",
+      "target": "PowerToys.WorkspacesCsharpLibrary",
+      "detail": "defines only on the bazel side",
+      "tu": null,
+      "cmake_only": [],
+      "bazel_only": [
+        "NETSTANDARD1_0_OR_GREATER",
+        "NETSTANDARD1_1_OR_GREATER",
+        "NETSTANDARD1_2_OR_GREATER",
+        "NETSTANDARD1_3_OR_GREATER",
+        "NETSTANDARD1_4_OR_GREATER",
+        "NETSTANDARD1_5_OR_GREATER",
+        "NETSTANDARD1_6_OR_GREATER",
+        "NETSTANDARD2_0_OR_GREATER",
+        "NETSTANDARD2_1_OR_GREATER",
+        "NETSTANDARD_OR_GREATER"
+      ]
+    }
+  ],
+  "excluded": {
+    "cmake": {
+      "config_excluded": [
+        "FancyZonesEditor_l4maa1e4_wpftmp",
+        "WorkspacesLauncherUI_qq533e0t_wpftmp"
+      ]
+    },
+    "bazel": {
+      "config_excluded": [
+        "bazel/dotnet/apphost:apphost",
+        "bazel/dotnet/resx:resx2resources",
+        "bazel/dotnet/xaml:make_pri",
+        "bazel/dotnet/xaml:wpf_markup",
+        "bazel/dotnet/xaml:xaml_compile"
+      ]
+    }
+  }
+}

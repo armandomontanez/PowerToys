@@ -1,0 +1,782 @@
+{
+ "exclude_targets": [
+  "bazel/dotnet/apphost:apphost",
+  "bazel/dotnet/resx:resx2resources",
+  "bazel/dotnet/xaml:make_pri",
+  "bazel/dotnet/xaml:wpf_markup",
+  "bazel/dotnet/xaml:xaml_compile"
+ ],
+ "ignore": {
+  "source_map": [
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/ColorPickerUI.AssemblyInfo.cs",
+    "to": "@msbuild/ColorPickerUI/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/_msbuild/ColorPickerUI/ColorPickerUI.AssemblyInfo.cs",
+    "to": "@msbuild/ColorPickerUI/assembly_info"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/Generated Files/CsWinRT/",
+    "to": "@cswinrt/ColorPickerUI"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/cswinrt.cs",
+    "to": "@cswinrt/ColorPickerUI"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/ColorPickerUI/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/_msbuild/ColorPickerUI/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/ColorPickerUI/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/ColorPickerXAML/App.g.i.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/App.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml1/ColorPickerXAML/App.g.i.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/App.g.i.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/ColorPickerXAML/App.g.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/App.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml2/ColorPickerXAML/App.g.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/App.g.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/ColorPickerXAML/ColorEditorWindow.g.i.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ColorEditorWindow.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml1/ColorPickerXAML/ColorEditorWindow.g.i.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ColorEditorWindow.g.i.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/ColorPickerXAML/ColorEditorWindow.g.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ColorEditorWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml2/ColorPickerXAML/ColorEditorWindow.g.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ColorEditorWindow.g.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/ColorPickerXAML/ColorPickerOverlayWindow.g.i.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ColorPickerOverlayWindow.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml1/ColorPickerXAML/ColorPickerOverlayWindow.g.i.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ColorPickerOverlayWindow.g.i.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/ColorPickerXAML/ColorPickerOverlayWindow.g.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ColorPickerOverlayWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml2/ColorPickerXAML/ColorPickerOverlayWindow.g.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ColorPickerOverlayWindow.g.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/ColorPickerXAML/ZoomWindow.g.i.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ZoomWindow.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml1/ColorPickerXAML/ZoomWindow.g.i.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ZoomWindow.g.i.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/ColorPickerXAML/ZoomWindow.g.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ZoomWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml2/ColorPickerXAML/ZoomWindow.g.cs",
+    "to": "@xaml/ColorPickerUI/ColorPickerXAML/ZoomWindow.g.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/Controls/ColorPickerControl.g.i.cs",
+    "to": "@xaml/ColorPickerUI/Controls/ColorPickerControl.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml1/Controls/ColorPickerControl.g.i.cs",
+    "to": "@xaml/ColorPickerUI/Controls/ColorPickerControl.g.i.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/Controls/ColorPickerControl.g.cs",
+    "to": "@xaml/ColorPickerUI/Controls/ColorPickerControl.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml2/Controls/ColorPickerControl.g.cs",
+    "to": "@xaml/ColorPickerUI/Controls/ColorPickerControl.g.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/Views/ColorEditorView.g.i.cs",
+    "to": "@xaml/ColorPickerUI/Views/ColorEditorView.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml1/Views/ColorEditorView.g.i.cs",
+    "to": "@xaml/ColorPickerUI/Views/ColorEditorView.g.i.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/Views/ColorEditorView.g.cs",
+    "to": "@xaml/ColorPickerUI/Views/ColorEditorView.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml2/Views/ColorEditorView.g.cs",
+    "to": "@xaml/ColorPickerUI/Views/ColorEditorView.g.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/Views/ColorPickerView.g.i.cs",
+    "to": "@xaml/ColorPickerUI/Views/ColorPickerView.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml1/Views/ColorPickerView.g.i.cs",
+    "to": "@xaml/ColorPickerUI/Views/ColorPickerView.g.i.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/Views/ColorPickerView.g.cs",
+    "to": "@xaml/ColorPickerUI/Views/ColorPickerView.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml2/Views/ColorPickerView.g.cs",
+    "to": "@xaml/ColorPickerUI/Views/ColorPickerView.g.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/Views/ZoomView.g.i.cs",
+    "to": "@xaml/ColorPickerUI/Views/ZoomView.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml1/Views/ZoomView.g.i.cs",
+    "to": "@xaml/ColorPickerUI/Views/ZoomView.g.i.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/Views/ZoomView.g.cs",
+    "to": "@xaml/ColorPickerUI/Views/ZoomView.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml2/Views/ZoomView.g.cs",
+    "to": "@xaml/ColorPickerUI/Views/ZoomView.g.cs"
+   },
+   {
+    "from": "src/modules/colorPicker/ColorPickerUI/obj/x64/Release/XamlTypeInfo.g.cs",
+    "to": "@xaml/ColorPickerUI/XamlTypeInfo.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/colorPicker/ColorPickerUI/ColorPickerUI_xaml2/XamlTypeInfo.g.cs",
+    "to": "@xaml/ColorPickerUI/XamlTypeInfo.g.cs"
+   },
+   {
+    "from": "src/common/Common.UI/obj/x64/Release/net10.0-windows10.0.26100.0/Common.UI.AssemblyInfo.cs",
+    "to": "@msbuild/Common.UI/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/common/Common.UI/_msbuild/Common.UI/Common.UI.AssemblyInfo.cs",
+    "to": "@msbuild/Common.UI/assembly_info"
+   },
+   {
+    "from": "src/common/Common.UI/obj/x64/Release/net10.0-windows10.0.26100.0/Generated Files/CsWinRT/",
+    "to": "@cswinrt/Common.UI"
+   },
+   {
+    "from": "bazel-bin/src/common/Common.UI/cswinrt.cs",
+    "to": "@cswinrt/Common.UI"
+   },
+   {
+    "from": "src/common/Common.UI/obj/x64/Release/net10.0-windows10.0.26100.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/Common.UI/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/common/Common.UI/_msbuild/Common.UI/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/Common.UI/target_framework_attribute"
+   },
+   {
+    "from": "src/common/Common.UI.Controls/obj/x64/Release/net10.0-windows10.0.26100.0/win-x64/Common.UI.Controls.AssemblyInfo.cs",
+    "to": "@msbuild/Common.UI.Controls/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/common/Common.UI.Controls/_msbuild/Common.UI.Controls/Common.UI.Controls.AssemblyInfo.cs",
+    "to": "@msbuild/Common.UI.Controls/assembly_info"
+   },
+   {
+    "from": "src/common/Common.UI.Controls/obj/x64/Release/net10.0-windows10.0.26100.0/win-x64/Generated Files/CsWinRT/",
+    "to": "@cswinrt/Common.UI.Controls"
+   },
+   {
+    "from": "bazel-bin/src/common/Common.UI.Controls/cswinrt.cs",
+    "to": "@cswinrt/Common.UI.Controls"
+   },
+   {
+    "from": "src/common/Common.UI.Controls/obj/x64/Release/net10.0-windows10.0.26100.0/win-x64/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/Common.UI.Controls/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/common/Common.UI.Controls/_msbuild/Common.UI.Controls/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/Common.UI.Controls/target_framework_attribute"
+   },
+   {
+    "from": "src/common/Common.UI.Controls/obj/x64/Release/net10.0-windows10.0.26100.0/win-x64/XamlTypeInfo.g.cs",
+    "to": "@xaml/Common.UI.Controls/XamlTypeInfo.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/common/Common.UI.Controls/Common.UI.Controls_xaml2/XamlTypeInfo.g.cs",
+    "to": "@xaml/Common.UI.Controls/XamlTypeInfo.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/FancyZonesEditor.AssemblyInfo.cs",
+    "to": "@msbuild/FancyZonesEditor/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/_msbuild/FancyZonesEditor/FancyZonesEditor.AssemblyInfo.cs",
+    "to": "@msbuild/FancyZonesEditor/assembly_info"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/Generated Files/CsWinRT/",
+    "to": "@cswinrt/FancyZonesEditor"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/cswinrt_net10.0-windows10.0.26100.0.cs",
+    "to": "@cswinrt/FancyZonesEditor"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/FancyZonesEditor/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/_msbuild/FancyZonesEditor/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/FancyZonesEditor/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/CanvasEditor.g.cs",
+    "to": "@xaml/FancyZonesEditor/CanvasEditor.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/CanvasEditor.g.cs",
+    "to": "@xaml/FancyZonesEditor/CanvasEditor.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/CanvasEditorWindow.g.cs",
+    "to": "@xaml/FancyZonesEditor/CanvasEditorWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/CanvasEditorWindow.g.cs",
+    "to": "@xaml/FancyZonesEditor/CanvasEditorWindow.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/CanvasZone.g.cs",
+    "to": "@xaml/FancyZonesEditor/CanvasZone.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/CanvasZone.g.cs",
+    "to": "@xaml/FancyZonesEditor/CanvasZone.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/ClickAutomationEventButton.g.cs",
+    "to": "@xaml/FancyZonesEditor/ClickAutomationEventButton.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/ClickAutomationEventButton.g.cs",
+    "to": "@xaml/FancyZonesEditor/ClickAutomationEventButton.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/Controls/CustomSlider.g.cs",
+    "to": "@xaml/FancyZonesEditor/Controls/CustomSlider.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/Controls/CustomSlider.g.cs",
+    "to": "@xaml/FancyZonesEditor/Controls/CustomSlider.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/GridEditor.g.cs",
+    "to": "@xaml/FancyZonesEditor/GridEditor.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/GridEditor.g.cs",
+    "to": "@xaml/FancyZonesEditor/GridEditor.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/GridEditorWindow.g.cs",
+    "to": "@xaml/FancyZonesEditor/GridEditorWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/GridEditorWindow.g.cs",
+    "to": "@xaml/FancyZonesEditor/GridEditorWindow.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/GridResizer.g.cs",
+    "to": "@xaml/FancyZonesEditor/GridResizer.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/GridResizer.g.cs",
+    "to": "@xaml/FancyZonesEditor/GridResizer.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/GridZone.g.cs",
+    "to": "@xaml/FancyZonesEditor/GridZone.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/GridZone.g.cs",
+    "to": "@xaml/FancyZonesEditor/GridZone.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/LayoutOverlayWindow.g.cs",
+    "to": "@xaml/FancyZonesEditor/LayoutOverlayWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/LayoutOverlayWindow.g.cs",
+    "to": "@xaml/FancyZonesEditor/LayoutOverlayWindow.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/LayoutPreview.g.cs",
+    "to": "@xaml/FancyZonesEditor/LayoutPreview.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/LayoutPreview.g.cs",
+    "to": "@xaml/FancyZonesEditor/LayoutPreview.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/MainWindow.g.cs",
+    "to": "@xaml/FancyZonesEditor/MainWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/MainWindow.g.cs",
+    "to": "@xaml/FancyZonesEditor/MainWindow.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/App.g.cs",
+    "to": "@xaml/FancyZonesEditor/App.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/App.g.cs",
+    "to": "@xaml/FancyZonesEditor/App.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/editor/FancyZonesEditor/obj/x64/Release/GeneratedInternalTypeHelper.g.cs",
+    "to": "@xaml/FancyZonesEditor/GeneratedInternalTypeHelper.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/editor/FancyZonesEditor/FancyZonesEditor_wpf1/GeneratedInternalTypeHelper.g.cs",
+    "to": "@xaml/FancyZonesEditor/GeneratedInternalTypeHelper.g.cs"
+   },
+   {
+    "from": "src/modules/fancyzones/FancyZonesEditorCommon/obj/x64/Release/net10.0-windows10.0.26100.0/FancyZonesEditorCommon.AssemblyInfo.cs",
+    "to": "@msbuild/FancyZonesEditorCommon/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/FancyZonesEditorCommon/_msbuild/FancyZonesEditorCommon/FancyZonesEditorCommon.AssemblyInfo.cs",
+    "to": "@msbuild/FancyZonesEditorCommon/assembly_info"
+   },
+   {
+    "from": "src/modules/fancyzones/FancyZonesEditorCommon/obj/x64/Release/net10.0-windows10.0.26100.0/Generated Files/CsWinRT/",
+    "to": "@cswinrt/FancyZonesEditorCommon"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/FancyZonesEditorCommon/cswinrt.cs",
+    "to": "@cswinrt/FancyZonesEditorCommon"
+   },
+   {
+    "from": "src/modules/fancyzones/FancyZonesEditorCommon/obj/x64/Release/net10.0-windows10.0.26100.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/FancyZonesEditorCommon/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/fancyzones/FancyZonesEditorCommon/_msbuild/FancyZonesEditorCommon/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/FancyZonesEditorCommon/target_framework_attribute"
+   },
+   {
+    "from": "src/common/GPOWrapperProjection/obj/x64/Release/net10.0-windows10.0.26100.0/GPOWrapperProjection.AssemblyInfo.cs",
+    "to": "@msbuild/GPOWrapperProjection/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/common/GPOWrapperProjection/_msbuild/GPOWrapperProjection/GPOWrapperProjection.AssemblyInfo.cs",
+    "to": "@msbuild/GPOWrapperProjection/assembly_info"
+   },
+   {
+    "from": "src/common/GPOWrapperProjection/obj/x64/Release/net10.0-windows10.0.26100.0/Generated Files/CsWinRT/",
+    "to": "@cswinrt/GPOWrapperProjection"
+   },
+   {
+    "from": "bazel-bin/src/common/GPOWrapperProjection/cswinrt.cs",
+    "to": "@cswinrt/GPOWrapperProjection"
+   },
+   {
+    "from": "src/common/GPOWrapperProjection/obj/x64/Release/net10.0-windows10.0.26100.0/GPOWrapperProjection.GlobalUsings.g.cs",
+    "to": "@msbuild/GPOWrapperProjection/global_usings"
+   },
+   {
+    "from": "bazel-bin/src/common/GPOWrapperProjection/_msbuild/GPOWrapperProjection/GPOWrapperProjection.GlobalUsings.g.cs",
+    "to": "@msbuild/GPOWrapperProjection/global_usings"
+   },
+   {
+    "from": "src/common/GPOWrapperProjection/obj/x64/Release/net10.0-windows10.0.26100.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/GPOWrapperProjection/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/common/GPOWrapperProjection/_msbuild/GPOWrapperProjection/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/GPOWrapperProjection/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/Hosts/Hosts/obj/x64/Release/Hosts.AssemblyInfo.cs",
+    "to": "@msbuild/Hosts/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/Hosts/_msbuild/Hosts/Hosts.AssemblyInfo.cs",
+    "to": "@msbuild/Hosts/assembly_info"
+   },
+   {
+    "from": "src/modules/Hosts/Hosts/obj/x64/Release/Generated Files/CsWinRT/",
+    "to": "@cswinrt/Hosts"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/Hosts/cswinrt.cs",
+    "to": "@cswinrt/Hosts"
+   },
+   {
+    "from": "src/modules/Hosts/Hosts/obj/x64/Release/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/Hosts/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/Hosts/_msbuild/Hosts/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/Hosts/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/Hosts/Hosts/obj/x64/Release/HostsXAML/App.g.i.cs",
+    "to": "@xaml/Hosts/HostsXAML/App.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/Hosts/Hosts_xaml1/HostsXAML/App.g.i.cs",
+    "to": "@xaml/Hosts/HostsXAML/App.g.i.cs"
+   },
+   {
+    "from": "src/modules/Hosts/Hosts/obj/x64/Release/HostsXAML/App.g.cs",
+    "to": "@xaml/Hosts/HostsXAML/App.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/Hosts/Hosts_xaml2/HostsXAML/App.g.cs",
+    "to": "@xaml/Hosts/HostsXAML/App.g.cs"
+   },
+   {
+    "from": "src/modules/Hosts/Hosts/obj/x64/Release/HostsXAML/MainWindow.g.i.cs",
+    "to": "@xaml/Hosts/HostsXAML/MainWindow.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/Hosts/Hosts_xaml1/HostsXAML/MainWindow.g.i.cs",
+    "to": "@xaml/Hosts/HostsXAML/MainWindow.g.i.cs"
+   },
+   {
+    "from": "src/modules/Hosts/Hosts/obj/x64/Release/HostsXAML/MainWindow.g.cs",
+    "to": "@xaml/Hosts/HostsXAML/MainWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/Hosts/Hosts_xaml2/HostsXAML/MainWindow.g.cs",
+    "to": "@xaml/Hosts/HostsXAML/MainWindow.g.cs"
+   },
+   {
+    "from": "src/modules/Hosts/Hosts/obj/x64/Release/XamlTypeInfo.g.cs",
+    "to": "@xaml/Hosts/XamlTypeInfo.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/Hosts/Hosts_xaml2/XamlTypeInfo.g.cs",
+    "to": "@xaml/Hosts/XamlTypeInfo.g.cs"
+   },
+   {
+    "from": "src/modules/Hosts/HostsUILib/obj/Release/HostsUILib.AssemblyInfo.cs",
+    "to": "@msbuild/HostsUILib/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/HostsUILib/_msbuild/HostsUILib/HostsUILib.AssemblyInfo.cs",
+    "to": "@msbuild/HostsUILib/assembly_info"
+   },
+   {
+    "from": "src/modules/Hosts/HostsUILib/obj/Release/Generated Files/CsWinRT/",
+    "to": "@cswinrt/HostsUILib"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/HostsUILib/cswinrt.cs",
+    "to": "@cswinrt/HostsUILib"
+   },
+   {
+    "from": "src/modules/Hosts/HostsUILib/obj/Release/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/HostsUILib/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/HostsUILib/_msbuild/HostsUILib/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/HostsUILib/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/Hosts/HostsUILib/obj/Release/HostsMainPage.g.i.cs",
+    "to": "@xaml/HostsUILib/HostsMainPage.g.i.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/HostsUILib/HostsUILib_xaml1/HostsMainPage.g.i.cs",
+    "to": "@xaml/HostsUILib/HostsMainPage.g.i.cs"
+   },
+   {
+    "from": "src/modules/Hosts/HostsUILib/obj/Release/HostsMainPage.g.cs",
+    "to": "@xaml/HostsUILib/HostsMainPage.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/HostsUILib/HostsUILib_xaml2/HostsMainPage.g.cs",
+    "to": "@xaml/HostsUILib/HostsMainPage.g.cs"
+   },
+   {
+    "from": "src/modules/Hosts/HostsUILib/obj/Release/XamlTypeInfo.g.cs",
+    "to": "@xaml/HostsUILib/XamlTypeInfo.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Hosts/HostsUILib/HostsUILib_xaml2/XamlTypeInfo.g.cs",
+    "to": "@xaml/HostsUILib/XamlTypeInfo.g.cs"
+   },
+   {
+    "from": "src/common/ManagedCommon/obj/x64/Release/net10.0-windows10.0.26100.0/ManagedCommon.AssemblyInfo.cs",
+    "to": "@msbuild/ManagedCommon/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/common/ManagedCommon/_msbuild/ManagedCommon/ManagedCommon.AssemblyInfo.cs",
+    "to": "@msbuild/ManagedCommon/assembly_info"
+   },
+   {
+    "from": "src/common/ManagedCommon/obj/x64/Release/net10.0-windows10.0.26100.0/Generated Files/CsWinRT/",
+    "to": "@cswinrt/ManagedCommon"
+   },
+   {
+    "from": "bazel-bin/src/common/ManagedCommon/cswinrt.cs",
+    "to": "@cswinrt/ManagedCommon"
+   },
+   {
+    "from": "src/common/ManagedCommon/obj/x64/Release/net10.0-windows10.0.26100.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/ManagedCommon/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/common/ManagedCommon/_msbuild/ManagedCommon/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/ManagedCommon/target_framework_attribute"
+   },
+   {
+    "from": "src/common/ManagedTelemetry/Telemetry/obj/x64/Release/net10.0-windows10.0.26100.0/ManagedTelemetry.AssemblyInfo.cs",
+    "to": "@msbuild/ManagedTelemetry/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/common/ManagedTelemetry/Telemetry/_msbuild/ManagedTelemetry/ManagedTelemetry.AssemblyInfo.cs",
+    "to": "@msbuild/ManagedTelemetry/assembly_info"
+   },
+   {
+    "from": "src/common/ManagedTelemetry/Telemetry/obj/x64/Release/net10.0-windows10.0.26100.0/Generated Files/CsWinRT/",
+    "to": "@cswinrt/ManagedTelemetry"
+   },
+   {
+    "from": "bazel-bin/src/common/ManagedTelemetry/Telemetry/cswinrt.cs",
+    "to": "@cswinrt/ManagedTelemetry"
+   },
+   {
+    "from": "src/common/ManagedTelemetry/Telemetry/obj/x64/Release/net10.0-windows10.0.26100.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/ManagedTelemetry/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/common/ManagedTelemetry/Telemetry/_msbuild/ManagedTelemetry/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/ManagedTelemetry/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/MouseUtils/MouseJump.Common/obj/x64/Release/MouseJump.Common.AssemblyInfo.cs",
+    "to": "@msbuild/MouseJump.Common/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/MouseUtils/MouseJump.Common/_msbuild/MouseJump.Common/MouseJump.Common.AssemblyInfo.cs",
+    "to": "@msbuild/MouseJump.Common/assembly_info"
+   },
+   {
+    "from": "src/modules/MouseUtils/MouseJump.Common/obj/x64/Release/Generated Files/CsWinRT/",
+    "to": "@cswinrt/MouseJump.Common"
+   },
+   {
+    "from": "bazel-bin/src/modules/MouseUtils/MouseJump.Common/cswinrt.cs",
+    "to": "@cswinrt/MouseJump.Common"
+   },
+   {
+    "from": "src/modules/MouseUtils/MouseJump.Common/obj/x64/Release/MouseJump.Common.GlobalUsings.g.cs",
+    "to": "@msbuild/MouseJump.Common/global_usings"
+   },
+   {
+    "from": "bazel-bin/src/modules/MouseUtils/MouseJump.Common/_msbuild/MouseJump.Common/MouseJump.Common.GlobalUsings.g.cs",
+    "to": "@msbuild/MouseJump.Common/global_usings"
+   },
+   {
+    "from": "src/modules/MouseUtils/MouseJump.Common/obj/x64/Release/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/MouseJump.Common/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/MouseUtils/MouseJump.Common/_msbuild/MouseJump.Common/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/MouseJump.Common/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/MouseUtils/MouseJump.Models/obj/x64/Release/MouseJump.Models.AssemblyInfo.cs",
+    "to": "@msbuild/MouseJump.Models/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/MouseUtils/MouseJump.Models/_msbuild/MouseJump.Models/MouseJump.Models.AssemblyInfo.cs",
+    "to": "@msbuild/MouseJump.Models/assembly_info"
+   },
+   {
+    "from": "src/modules/MouseUtils/MouseJump.Models/obj/x64/Release/Generated Files/CsWinRT/",
+    "to": "@cswinrt/MouseJump.Models"
+   },
+   {
+    "from": "bazel-bin/src/modules/MouseUtils/MouseJump.Models/cswinrt.cs",
+    "to": "@cswinrt/MouseJump.Models"
+   },
+   {
+    "from": "src/modules/MouseUtils/MouseJump.Models/obj/x64/Release/MouseJump.Models.GlobalUsings.g.cs",
+    "to": "@msbuild/MouseJump.Models/global_usings"
+   },
+   {
+    "from": "bazel-bin/src/modules/MouseUtils/MouseJump.Models/_msbuild/MouseJump.Models/MouseJump.Models.GlobalUsings.g.cs",
+    "to": "@msbuild/MouseJump.Models/global_usings"
+   },
+   {
+    "from": "src/modules/MouseUtils/MouseJump.Models/obj/x64/Release/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/MouseJump.Models/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/MouseUtils/MouseJump.Models/_msbuild/MouseJump.Models/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/MouseJump.Models/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/powerdisplay/PowerDisplay.Models/obj/x64/Release/PowerDisplay.Models.AssemblyInfo.cs",
+    "to": "@msbuild/PowerDisplay.Models/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/powerdisplay/PowerDisplay.Models/_msbuild/PowerDisplay.Models/PowerDisplay.Models.AssemblyInfo.cs",
+    "to": "@msbuild/PowerDisplay.Models/assembly_info"
+   },
+   {
+    "from": "src/modules/powerdisplay/PowerDisplay.Models/obj/x64/Release/Generated Files/CsWinRT/",
+    "to": "@cswinrt/PowerDisplay.Models"
+   },
+   {
+    "from": "bazel-bin/src/modules/powerdisplay/PowerDisplay.Models/cswinrt.cs",
+    "to": "@cswinrt/PowerDisplay.Models"
+   },
+   {
+    "from": "src/modules/powerdisplay/PowerDisplay.Models/obj/x64/Release/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/PowerDisplay.Models/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/powerdisplay/PowerDisplay.Models/_msbuild/PowerDisplay.Models/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/PowerDisplay.Models/target_framework_attribute"
+   },
+   {
+    "from": "src/settings-ui/Settings.UI.Library/obj/x64/Release/net10.0-windows10.0.26100.0/win-x64/Settings.UI.Library.AssemblyInfo.cs",
+    "to": "@msbuild/Settings.UI.Library/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/settings-ui/Settings.UI.Library/_msbuild/Settings.UI.Library/Settings.UI.Library.AssemblyInfo.cs",
+    "to": "@msbuild/Settings.UI.Library/assembly_info"
+   },
+   {
+    "from": "src/settings-ui/Settings.UI.Library/obj/x64/Release/net10.0-windows10.0.26100.0/win-x64/Generated Files/CsWinRT/",
+    "to": "@cswinrt/Settings.UI.Library"
+   },
+   {
+    "from": "bazel-bin/src/settings-ui/Settings.UI.Library/cswinrt.cs",
+    "to": "@cswinrt/Settings.UI.Library"
+   },
+   {
+    "from": "src/settings-ui/Settings.UI.Library/obj/x64/Release/net10.0-windows10.0.26100.0/win-x64/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/Settings.UI.Library/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/settings-ui/Settings.UI.Library/_msbuild/Settings.UI.Library/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/Settings.UI.Library/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesCsharpLibrary/obj/x64/Release/WorkspacesCsharpLibrary.AssemblyInfo.cs",
+    "to": "@msbuild/WorkspacesCsharpLibrary/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesCsharpLibrary/_msbuild/WorkspacesCsharpLibrary/WorkspacesCsharpLibrary.AssemblyInfo.cs",
+    "to": "@msbuild/WorkspacesCsharpLibrary/assembly_info"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesCsharpLibrary/obj/x64/Release/Generated Files/CsWinRT/",
+    "to": "@cswinrt/WorkspacesCsharpLibrary"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesCsharpLibrary/cswinrt.cs",
+    "to": "@cswinrt/WorkspacesCsharpLibrary"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesCsharpLibrary/obj/x64/Release/WorkspacesCsharpLibrary.GlobalUsings.g.cs",
+    "to": "@msbuild/WorkspacesCsharpLibrary/global_usings"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesCsharpLibrary/_msbuild/WorkspacesCsharpLibrary/WorkspacesCsharpLibrary.GlobalUsings.g.cs",
+    "to": "@msbuild/WorkspacesCsharpLibrary/global_usings"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesCsharpLibrary/obj/x64/Release/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/WorkspacesCsharpLibrary/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesCsharpLibrary/_msbuild/WorkspacesCsharpLibrary/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/WorkspacesCsharpLibrary/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesLauncherUI/obj/x64/Release/WorkspacesLauncherUI.AssemblyInfo.cs",
+    "to": "@msbuild/WorkspacesLauncherUI/assembly_info"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesLauncherUI/_msbuild/WorkspacesLauncherUI/WorkspacesLauncherUI.AssemblyInfo.cs",
+    "to": "@msbuild/WorkspacesLauncherUI/assembly_info"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesLauncherUI/obj/x64/Release/Generated Files/CsWinRT/",
+    "to": "@cswinrt/WorkspacesLauncherUI"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesLauncherUI/cswinrt_net10.0-windows10.0.26100.0.cs",
+    "to": "@cswinrt/WorkspacesLauncherUI"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesLauncherUI/obj/x64/Release/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/WorkspacesLauncherUI/target_framework_attribute"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesLauncherUI/_msbuild/WorkspacesLauncherUI/.NETCoreApp_Version_v10.0.AssemblyAttributes.cs",
+    "to": "@msbuild/WorkspacesLauncherUI/target_framework_attribute"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesLauncherUI/obj/x64/Release/SignatureWarningWindow.g.cs",
+    "to": "@xaml/WorkspacesLauncherUI/SignatureWarningWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesLauncherUI/WorkspacesLauncherUI_wpf1/SignatureWarningWindow.g.cs",
+    "to": "@xaml/WorkspacesLauncherUI/SignatureWarningWindow.g.cs"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesLauncherUI/obj/x64/Release/StatusWindow.g.cs",
+    "to": "@xaml/WorkspacesLauncherUI/StatusWindow.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesLauncherUI/WorkspacesLauncherUI_wpf1/StatusWindow.g.cs",
+    "to": "@xaml/WorkspacesLauncherUI/StatusWindow.g.cs"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesLauncherUI/obj/x64/Release/App.g.cs",
+    "to": "@xaml/WorkspacesLauncherUI/App.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesLauncherUI/WorkspacesLauncherUI_wpf1/App.g.cs",
+    "to": "@xaml/WorkspacesLauncherUI/App.g.cs"
+   },
+   {
+    "from": "src/modules/Workspaces/WorkspacesLauncherUI/obj/x64/Release/PowerToys.WorkspacesLauncherUI_Content.g.cs",
+    "to": "@xaml/WorkspacesLauncherUI/PowerToys.WorkspacesLauncherUI_Content.g.cs"
+   },
+   {
+    "from": "bazel-bin/src/modules/Workspaces/WorkspacesLauncherUI/WorkspacesLauncherUI_wpf1/PowerToys.WorkspacesLauncherUI_Content.g.cs",
+    "to": "@xaml/WorkspacesLauncherUI/PowerToys.WorkspacesLauncherUI_Content.g.cs"
+   }
+  ]
+ },
+ "include_csharp": true
+}

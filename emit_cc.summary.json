@@ -1,0 +1,87 @@
+{
+ "snapshots": {
+  "src/common/version/Generated Files/version_gen.h": "read by the compiles of AlwaysOnTop",
+  "src/modules/Hosts/HostsModuleInterface/Generated Files/HostsModuleInterface.rc": "resource script of HostsModuleInterface",
+  "src/modules/Hosts/HostsModuleInterface/Generated Files/resource.h": "read by the compiles of HostsModuleInterface",
+  "src/modules/alwaysontop/AlwaysOnTop/Generated Files/AlwaysOnTop.rc": "resource script of AlwaysOnTop",
+  "src/modules/alwaysontop/AlwaysOnTop/Generated Files/resource.h": "read by the compiles of AlwaysOnTop",
+  "src/modules/colorPicker/ColorPicker/Generated Files/ColorPicker.rc": "resource script of ColorPicker",
+  "src/modules/colorPicker/ColorPicker/Generated Files/resource.h": "read by the compiles of ColorPicker",
+  "src/runner/Generated Files/resource.h": "read by the compiles of runner",
+  "src/runner/Generated Files/runner.rc": "resource script of runner",
+  "src/runner/x64/Release/Manifests/app.manifest": "/MANIFESTINPUT of runner"
+ },
+ "targets": {
+  "AlwaysOnTop": {
+   "kind": "executable",
+   "label": "//src/modules/alwaysontop/AlwaysOnTop:PowerToys.AlwaysOnTop"
+  },
+  "AlwaysOnTopModuleInterface": {
+   "kind": "shared_library",
+   "label": "//src/modules/alwaysontop/AlwaysOnTopModuleInterface:PowerToys.AlwaysOnTopModuleInterface.dll"
+  },
+  "ApplicationUpdate": {
+   "kind": "static_library",
+   "label": "//src/common/updating:ApplicationUpdate"
+  },
+  "COMUtils": {
+   "kind": "static_library",
+   "label": "//src/common/COMUtils:COMUtils"
+  },
+  "ColorPicker": {
+   "kind": "shared_library",
+   "label": "//src/modules/colorPicker/ColorPicker:PowerToys.ColorPicker.dll"
+  },
+  "Display": {
+   "kind": "static_library",
+   "label": "//src/common/Display:Display"
+  },
+  "EtwTrace": {
+   "kind": "static_library",
+   "label": "//src/common/Telemetry/EtwTrace:EtwTrace"
+  },
+  "GPOWrapper": {
+   "kind": "shared_library",
+   "label": "//src/common/GPOWrapper:PowerToys.GPOWrapper.dll"
+  },
+  "HostsModuleInterface": {
+   "kind": "shared_library",
+   "label": "//src/modules/Hosts/HostsModuleInterface:PowerToys.HostsModuleInterface.dll"
+  },
+  "Notifications": {
+   "kind": "static_library",
+   "label": "//src/common/notifications:Notifications"
+  },
+  "PowerToys.Interop": {
+   "kind": "shared_library",
+   "label": "//src/common/interop:PowerToys.Interop.dll"
+  },
+  "SettingsAPI": {
+   "kind": "static_library",
+   "label": "//src/common/SettingsAPI:SettingsAPI"
+  },
+  "Themes": {
+   "kind": "static_library",
+   "label": "//src/common/Themes:Themes"
+  },
+  "Version": {
+   "kind": "static_library",
+   "label": "//src/common/version:Version"
+  },
+  "ZoomItSettingsInterop": {
+   "kind": "shared_library",
+   "label": "//src/modules/ZoomIt/ZoomItSettingsInterop:PowerToys.ZoomItSettingsInterop.dll"
+  },
+  "logger": {
+   "kind": "static_library",
+   "label": "//src/common/logger:logger"
+  },
+  "runner": {
+   "kind": "executable",
+   "label": "//src/runner:PowerToys",
+   "notes": [
+    "/ASSEMBLYRESOURCE:x64\\Release\\powertoys.Resources.resources dropped: it embeds a managed resource, which a native image does not have"
+   ]
+  }
+ }
+}
